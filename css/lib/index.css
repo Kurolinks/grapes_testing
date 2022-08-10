@@ -1,0 +1,76 @@
+body{
+    margin:0; 
+    padding: 0;
+    font-family: lato;
+    font-weight: 700;
+}
+html{
+    overflow: scroll ;
+    overflow-x: hidden;/*check if this needs to be removed*/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.sidenav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    background-color: #EEE7F1;
+    color: black;
+}
+.drop1{
+    background-color: none;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-weight: 500;
+}
+#dropdownMenu{
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 500;
+
+}
+/* .custom-blocks{
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 200px;
+} */
+.tile{
+    box-sizing: border-box;
+    background-color: white;
+    height: 100px;
+    color: #1f1f1f;
+    width: 35%;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+.tile:hover{
+    background-color: #540D6E;
+    color: white;
+    /* stroke: white; */
+}
+.tile:hover> svg path{
+    fill:white;
+}
+.tiles:nth-of-type(1) .tile:nth-child(2):hover>svg path{
+    stroke: white;
+    fill: none;
+}
+.tiles:nth-of-type(4) .tile:nth-child(1):hover>svg path{
+    stroke: white;
+    fill: none;
+}
+.main-content{
+    position: relative;
+    width:80%;
+    left:20%;
+
+}
