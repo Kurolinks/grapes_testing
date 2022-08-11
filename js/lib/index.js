@@ -27,3 +27,9 @@ const editor=grapesjs.init({
   ]
 },
 });
+
+editor.BlockManager.add('my-block-id', {
+    label: '...',
+    category: '...',
+    // ...
+  })
